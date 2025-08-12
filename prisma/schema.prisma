@@ -1,0 +1,66 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(cuid())
+  name      String
+  email     String   @unique
+  role      String   @default("VIEWER") // ADMIN, EDITOR, VIEWER
+  createdAt DateTime @default(now())
+  posts     Post[]
+}
+
+model Post {
+  id          String   @id @default(cuid())
+  title       String
+  slug        String   @unique
+  excerpt     String?
+  bodyPath    String
+  tags        String   // Comma-separated tags
+  coverImage  String?
+  status      String   @default("DRAFT") // DRAFT, PUBLISHED
+  publishedAt DateTime?
+  updatedAt   DateTime @updatedAt
+  authorId    String
+  author      User     @relation(fields: [authorId], references: [id])
+}
+
+model Event {
+  id          String   @id @default(cuid())
+  title       String
+  description String?
+  startsAt    DateTime
+  endsAt      DateTime?
+  location    String?
+  isOnline    Boolean  @default(false)
+  link        String?
+  status      String   @default("UPCOMING") // UPCOMING, ONGOING, COMPLETED, CANCELLED
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Lead {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  interests String?
+  createdAt DateTime @default(now())
+}
+
+model Media {
+  id        String   @id @default(cuid())
+  url       String
+  alt       String?
+  width     Int?
+  height    Int?
+  createdAt DateTime @default(now())
+}

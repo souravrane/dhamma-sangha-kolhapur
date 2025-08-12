@@ -1,103 +1,174 @@
-import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <main className="min-h-screen">
+      {/* Hero Section */}
+      <section className="py-20 px-4 text-center">
+        <div className="max-w-4xl mx-auto">
+          <h1 className="text-5xl md:text-6xl font-bold text-cambridge_blue mb-6">
+            Dhamma Sangha Kolhapur
+          </h1>
+          <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto">
+            Exploring Buddha's teachings through a scientific, evidence-aware
+            lens
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/join"
+              className="bg-hunyadi_yellow hover:bg-yellow-500 text-gray-900 px-8 py-3 rounded-2xl font-semibold transition-colors shadow-soft"
+            >
+              Join Our Community
+            </Link>
+            <Link
+              href="/blogs"
+              className="border-2 border-cambridge_blue text-cambridge_blue hover:bg-cambridge_blue hover:text-white px-8 py-3 rounded-2xl font-semibold transition-colors"
+            >
+              Read Our Blog
+            </Link>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section>
+
+      {/* Mission Section */}
+      <section className="py-16 px-4 bg-linen">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-cambridge_blue mb-6">
+            Our Mission
+          </h2>
+          <p className="text-lg text-gray-700 mb-8 max-w-3xl mx-auto">
+            We bridge ancient wisdom with modern understanding, creating a space
+            where Buddhist teachings are accessible, relevant, and grounded in
+            evidence-based practices.
+          </p>
+          <Link
+            href="/about"
+            className="inline-block bg-tea_rose_red hover:bg-pink-300 text-gray-900 px-6 py-2 rounded-xl font-medium transition-colors"
+          >
+            Learn More About Us
+          </Link>
+        </div>
+      </section>
+
+      {/* Latest Posts Section */}
+      <section className="py-16 px-4">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-cambridge_blue mb-8 text-center">
+            Latest Insights
+          </h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Sample Post Card */}
+            <article className="bg-white rounded-2xl p-6 shadow-soft hover:shadow-lg transition-shadow">
+              <div className="mb-4">
+                <span className="inline-block bg-hunyadi_yellow text-gray-900 px-3 py-1 rounded-full text-sm font-medium">
+                  Community
+                </span>
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                Welcome to Sangha Dhamma
+              </h3>
+              <p className="text-gray-600 mb-4">
+                An introduction to our community and approach to Buddhist
+                teachings
+              </p>
+              <Link
+                href="/blogs/welcome-to-sangha-dhamma"
+                className="text-cambridge_blue hover:text-blue-700 font-medium"
+              >
+                Read More →
+              </Link>
+            </article>
+
+            {/* Placeholder Cards */}
+            <article className="bg-white rounded-2xl p-6 shadow-soft">
+              <div className="mb-4">
+                <span className="inline-block bg-light_coral text-white px-3 py-1 rounded-full text-sm font-medium">
+                  Coming Soon
+                </span>
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                The Science of Mindfulness
+              </h3>
+              <p className="text-gray-600 mb-4">
+                Exploring research-backed benefits of meditation practices
+              </p>
+              <span className="text-gray-400 font-medium">Coming Soon</span>
+            </article>
+
+            <article className="bg-white rounded-2xl p-6 shadow-soft">
+              <div className="mb-4">
+                <span className="inline-block bg-cambridge_blue text-white px-3 py-1 rounded-full text-sm font-medium">
+                  Coming Soon
+                </span>
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                Compassion in Action
+              </h3>
+              <p className="text-gray-600 mb-4">
+                How Buddhist compassion translates to modern social engagement
+              </p>
+              <span className="text-gray-400 font-medium">Coming Soon</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      {/* Community Highlights */}
+      <section className="py-16 px-4 bg-linen">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-cambridge_blue mb-8 text-center">
+            Community Highlights
+          </h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="text-4xl mb-4">🧘‍♀️</div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                Weekly Meditation
+              </h3>
+              <p className="text-gray-600">
+                Join us every Sunday for guided meditation and discussion
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl mb-4">📚</div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                Study Groups
+              </h3>
+              <p className="text-gray-600">
+                Explore Buddhist texts and teachings together
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl mb-4">🤝</div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                Community Service
+              </h3>
+              <p className="text-gray-600">
+                Put compassion into action through community projects
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 px-4 bg-cambridge_blue">
+        <div className="max-w-4xl mx-auto text-center text-white">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Ready to Begin Your Journey?
+          </h2>
+          <p className="text-xl mb-8 opacity-90">
+            Join our community and discover the transformative power of mindful
+            living
+          </p>
+          <Link
+            href="/join"
+            className="bg-hunyadi_yellow hover:bg-yellow-500 text-gray-900 px-8 py-3 rounded-2xl font-semibold transition-colors shadow-soft"
+          >
+            Get Started Today
+          </Link>
+        </div>
+      </section>
+    </main>
   );
 }
