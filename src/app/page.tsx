@@ -4,8 +4,13 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="py-20 px-4 text-center">
+      <section className="py-6 px-4 text-center">
         <div className="max-w-4xl mx-auto">
+          <img
+            src="/logo.png"
+            alt="Dhamma Sangha Kolhapur"
+            className="w-1/2 mx-auto mb-6 md:w-1/2 sm:w-1/2"
+          />
           <h1 className="text-5xl md:text-6xl font-bold text-cambridge_blue mb-6">
             Dhamma Sangha Kolhapur
           </h1>

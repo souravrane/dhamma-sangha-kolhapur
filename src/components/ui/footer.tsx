@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -40,11 +41,13 @@ export function Footer() {
           {/* Brand Section */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
-                <span className="text-cambridge_blue text-sm font-bold">
-                  SD
-                </span>
-              </div>
+              <Image
+                src="/logo.png"
+                alt="Dhamma Sangha Kolhapur Logo"
+                width={40}
+                height={40}
+                className="rounded-full"
+              />
               <span className="text-2xl font-serif font-semibold">
                 Dhamma Sangha
               </span>

@@ -13,12 +13,32 @@ export const metadata: Metadata = {
     "A community exploring Buddha's teachings through a scientific, evidence-aware lens",
   keywords: ["Buddhism", "meditation", "mindfulness", "community", "Kolhapur"],
   authors: [{ name: "Dhamma Sangha Kolhapur" }],
+  icons: {
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
+  },
   openGraph: {
     title: "Dhamma Sangha Kolhapur",
     description:
       "A community exploring Buddha's teachings through a scientific, evidence-aware lens",
     type: "website",
     locale: "en_US",
+    images: [
+      {
+        url: "/logo.png",
+        width: 800,
+        height: 800,
+        alt: "Dhamma Sangha Kolhapur Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Dhamma Sangha Kolhapur",
+    description:
+      "A community exploring Buddha's teachings through a scientific, evidence-aware lens",
+    images: ["/logo.png"],
   },
 };
 

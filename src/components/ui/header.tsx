@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import Image from "next/image";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,9 +23,13 @@ export function Header() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-cambridge_blue rounded-full flex items-center justify-center">
-                <span className="text-white text-sm font-bold">SD</span>
-              </div>
+              <Image
+                src="/logo.png"
+                alt="Dhamma Sangha Kolhapur Logo"
+                width={32}
+                height={32}
+                className="rounded-full"
+              />
               <span className="text-xl font-serif font-semibold text-cambridge_blue">
                 Dhamma Sangha
               </span>
