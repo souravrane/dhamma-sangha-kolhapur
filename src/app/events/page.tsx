@@ -3,13 +3,13 @@ export default function EventsPage() {
     <main className="min-h-screen py-16 px-4">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl md:text-5xl font-bold text-cambridge_blue mb-8 text-center">
-          Events
+          कार्यक्रम
         </h1>
 
         {/* Upcoming Events */}
         <section className="mb-16">
           <h2 className="text-2xl font-semibold text-gray-900 mb-6">
-            Upcoming Events
+            आगामी कार्यक्रम
           </h2>
 
           <div className="space-y-6">

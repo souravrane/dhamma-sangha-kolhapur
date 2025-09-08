@@ -8,12 +8,12 @@ export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navigation = [
-    { name: "Home", href: "/" },
-    { name: "About", href: "/about" },
-    { name: "Blog", href: "/blogs" },
-    { name: "Events", href: "/events" },
-    { name: "Gallery", href: "/gallery" },
-    { name: "Contact", href: "/contact" },
+    { name: "मुख्यपृष्ठ", href: "/" },
+    { name: "आमच्याबद्दल", href: "/about" },
+    { name: "ब्लॉग", href: "/blogs" },
+    { name: "कार्यक्रम", href: "/events" },
+    { name: "गॅलरी", href: "/gallery" },
+    { name: "संपर्क", href: "/contact" },
   ];
 
   return (
@@ -25,13 +25,13 @@ export function Header() {
             <Link href="/" className="flex items-center space-x-2">
               <Image
                 src="/logo.png"
-                alt="Dhamma Sangha Kolhapur Logo"
+                alt="धम्म संघ कोल्हापूर लोगो"
                 width={32}
                 height={32}
                 className="rounded-full"
               />
               <span className="text-xl font-serif font-semibold text-cambridge_blue">
-                Dhamma Sangha
+                धम्म संघ
               </span>
             </Link>
           </div>
@@ -55,7 +55,7 @@ export function Header() {
               href="/join"
               className="bg-hunyadi_yellow hover:bg-yellow-500 text-gray-900 px-4 py-2 rounded-xl font-medium transition-colors"
             >
-              Join Us
+              सामील व्हा
             </Link>
           </div>
 
@@ -111,7 +111,7 @@ export function Header() {
                   className="bg-hunyadi_yellow hover:bg-yellow-500 text-gray-900 px-4 py-2 rounded-xl font-medium transition-colors block text-center"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Join Us
+                  सामील व्हा
                 </Link>
               </div>
             </div>

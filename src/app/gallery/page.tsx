@@ -95,7 +95,7 @@ export default function GalleryPage() {
     <main className="min-h-screen py-16 px-4">
       <div className="max-w-6xl mx-auto">
         <h1 className="text-4xl md:text-5xl font-bold text-cambridge_blue mb-8 text-center">
-          Gallery
+          गॅलरी
         </h1>
 
         <p className="text-lg text-gray-700 text-center mb-12 max-w-3xl mx-auto">

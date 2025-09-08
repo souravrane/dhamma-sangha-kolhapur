@@ -8,36 +8,36 @@ import { Footer } from "@/components/ui/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Dhamma Sangha Kolhapur",
+  title: "धम्म संघ कोल्हापूर",
   description:
-    "A community exploring Buddha's teachings through a scientific, evidence-aware lens",
-  keywords: ["Buddhism", "meditation", "mindfulness", "community", "Kolhapur"],
-  authors: [{ name: "Dhamma Sangha Kolhapur" }],
+    "वैज्ञानिक, साक्ष्य-आधारित दृष्टिकोनातून बुद्धाच्या शिकवणींचा अभ्यास करणारा समुदाय",
+  keywords: ["बौद्ध धर्म", "ध्यान", "सजगता", "समुदाय", "कोल्हापूर"],
+  authors: [{ name: "धम्म संघ कोल्हापूर" }],
   icons: {
     icon: "/favicon.png",
     shortcut: "/favicon.png",
     apple: "/favicon.png",
   },
   openGraph: {
-    title: "Dhamma Sangha Kolhapur",
+    title: "धम्म संघ कोल्हापूर",
     description:
-      "A community exploring Buddha's teachings through a scientific, evidence-aware lens",
+      "वैज्ञानिक, साक्ष्य-आधारित दृष्टिकोनातून बुद्धाच्या शिकवणींचा अभ्यास करणारा समुदाय",
     type: "website",
-    locale: "en_US",
+    locale: "mr_IN",
     images: [
       {
         url: "/logo.png",
         width: 800,
         height: 800,
-        alt: "Dhamma Sangha Kolhapur Logo",
+        alt: "धम्म संघ कोल्हापूर लोगो",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dhamma Sangha Kolhapur",
+    title: "धम्म संघ कोल्हापूर",
     description:
-      "A community exploring Buddha's teachings through a scientific, evidence-aware lens",
+      "वैज्ञानिक, साक्ष्य-आधारित दृष्टिकोनातून बुद्धाच्या शिकवणींचा अभ्यास करणारा समुदाय",
     images: ["/logo.png"],
   },
 };
@@ -48,7 +48,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="mr">
       <body className={inter.className}>
         <LotusBackground>
           <Header />

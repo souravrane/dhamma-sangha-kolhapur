@@ -3,7 +3,7 @@ export default function AdminPage() {
     <main className="min-h-screen py-16 px-4">
       <div className="max-w-6xl mx-auto">
         <h1 className="text-4xl md:text-5xl font-bold text-cambridge_blue mb-8 text-center">
-          Admin Dashboard
+          प्रशासन डॅशबोर्ड
         </h1>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

@@ -3,13 +3,13 @@ export default function ContactPage() {
     <main className="min-h-screen py-16 px-4">
       <div className="max-w-2xl mx-auto">
         <h1 className="text-4xl md:text-5xl font-bold text-cambridge_blue mb-8 text-center">
-          Contact Us
+          आमच्याशी संपर्क साधा
         </h1>
 
         <div className="bg-white rounded-2xl p-8 shadow-soft">
           <p className="text-lg text-gray-700 mb-8 text-center">
-            Have questions or want to learn more about our community? We'd love
-            to hear from you.
+            प्रश्न आहेत किंवा आमच्या समुदायाबद्दल अधिक जाणून घेतले? आम्हाला
+            तुमच्याकडून ऐकणे आवडेल.
           </p>
 
           <form className="space-y-6">
@@ -18,7 +18,7 @@ export default function ContactPage() {
                 htmlFor="name"
                 className="block text-sm font-medium text-gray-700 mb-2"
               >
-                Full Name *
+                पूर्ण नाव *
               </label>
               <input
                 type="text"
@@ -26,7 +26,7 @@ export default function ContactPage() {
                 name="name"
                 required
                 className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-cambridge_blue focus:border-transparent transition-colors"
-                placeholder="Enter your full name"
+                placeholder="तुमचे पूर्ण नाव टाका"
               />
             </div>
 
@@ -35,7 +35,7 @@ export default function ContactPage() {
                 htmlFor="email"
                 className="block text-sm font-medium text-gray-700 mb-2"
               >
-                Email Address *
+                ईमेल पत्ता *
               </label>
               <input
                 type="email"
@@ -43,7 +43,7 @@ export default function ContactPage() {
                 name="email"
                 required
                 className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-cambridge_blue focus:border-transparent transition-colors"
-                placeholder="Enter your email address"
+                placeholder="तुमचा ईमेल पत्ता टाका"
               />
             </div>
 
@@ -52,7 +52,7 @@ export default function ContactPage() {
                 htmlFor="subject"
                 className="block text-sm font-medium text-gray-700 mb-2"
               >
-                Subject *
+                विषय *
               </label>
               <select
                 id="subject"
@@ -60,12 +60,12 @@ export default function ContactPage() {
                 required
                 className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-cambridge_blue focus:border-transparent transition-colors"
               >
-                <option value="">Select a subject</option>
-                <option value="general">General Inquiry</option>
-                <option value="meditation">Meditation & Practice</option>
-                <option value="events">Events & Activities</option>
-                <option value="membership">Membership & Joining</option>
-                <option value="other">Other</option>
+                <option value="">विषय निवडा</option>
+                <option value="general">सामान्य चौकशी</option>
+                <option value="meditation">ध्यान आणि आचरण</option>
+                <option value="events">कार्यक्रम आणि उपक्रम</option>
+                <option value="membership">सदस्यत्व आणि सहभाग</option>
+                <option value="other">इतर</option>
               </select>
             </div>
 
@@ -74,7 +74,7 @@ export default function ContactPage() {
                 htmlFor="message"
                 className="block text-sm font-medium text-gray-700 mb-2"
               >
-                Message *
+                संदेश *
               </label>
               <textarea
                 id="message"
@@ -82,7 +82,7 @@ export default function ContactPage() {
                 rows={5}
                 required
                 className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-cambridge_blue focus:border-transparent transition-colors"
-                placeholder="Tell us how we can help you..."
+                placeholder="आम्ही तुमची कशी मदत करू शकतो ते सांगा..."
               />
             </div>
 
@@ -90,7 +90,7 @@ export default function ContactPage() {
               type="submit"
               className="w-full bg-cambridge_blue hover:bg-blue-700 text-white py-3 px-6 rounded-xl font-semibold transition-colors shadow-soft"
             >
-              Send Message
+              संदेश पाठवा
             </button>
           </form>
         </div>
@@ -98,22 +98,22 @@ export default function ContactPage() {
         {/* Contact Information */}
         <div className="mt-12 text-center">
           <h2 className="text-2xl font-semibold text-gray-900 mb-6">
-            Other Ways to Connect
+            संपर्काचे इतर मार्ग
           </h2>
           <div className="space-y-4">
             <div>
               <p className="text-gray-600">
-                <strong>Location:</strong> Kolhapur, Maharashtra, India
+                <strong>ठिकाण:</strong> कोल्हापूर, महाराष्ट्र, भारत
               </p>
             </div>
             <div>
               <p className="text-gray-600">
-                <strong>Email:</strong> info@dhammasanghakolhapur.com
+                <strong>ईमेल:</strong> info@dhammasanghakolhapur.com
               </p>
             </div>
             <div>
               <p className="text-gray-600">
-                <strong>Meeting Times:</strong> Weekly on Sundays at 10:00 AM
+                <strong>मीटिंग वेळ:</strong> दर रविवारी सकाळी 10:00 वाजता
               </p>
             </div>
           </div>

@@ -3,26 +3,26 @@ export default function BlogsPage() {
     <main className="min-h-screen py-16 px-4">
       <div className="max-w-6xl mx-auto">
         <h1 className="text-4xl md:text-5xl font-bold text-cambridge_blue mb-8 text-center">
-          Our Blog
+          आमचा ब्लॉग
         </h1>
 
         {/* Tag Filters */}
         <div className="mb-8 text-center">
           <div className="flex flex-wrap justify-center gap-2">
             <button className="bg-cambridge_blue text-white px-4 py-2 rounded-full text-sm font-medium">
-              All Posts
+              सर्व पोस्ट्स
             </button>
             <button className="bg-gray-200 hover:bg-gray-300 text-gray-700 px-4 py-2 rounded-full text-sm font-medium transition-colors">
-              Community
+              समुदाय
             </button>
             <button className="bg-gray-200 hover:bg-gray-300 text-gray-700 px-4 py-2 rounded-full text-sm font-medium transition-colors">
-              Meditation
+              ध्यान
             </button>
             <button className="bg-gray-200 hover:bg-gray-300 text-gray-700 px-4 py-2 rounded-full text-sm font-medium transition-colors">
-              Philosophy
+              तत्वज्ञान
             </button>
             <button className="bg-gray-200 hover:bg-gray-300 text-gray-700 px-4 py-2 rounded-full text-sm font-medium transition-colors">
-              Science
+              विज्ञान
             </button>
           </div>
         </div>
@@ -34,11 +34,11 @@ export default function BlogsPage() {
             <div className="p-6">
               <div className="mb-4">
                 <span className="inline-block bg-hunyadi_yellow text-gray-900 px-3 py-1 rounded-full text-sm font-medium">
-                  Community
+                  समुदाय
                 </span>
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Welcome to Sangha Dhamma
+                संघ धम्मामध्ये आपले स्वागत
               </h3>
               <p className="text-gray-600 mb-4">
                 An introduction to our community and approach to Buddhist

@@ -26,12 +26,12 @@ export function Footer() {
   ];
 
   const quickLinks = [
-    { name: "About Us", href: "/about" },
-    { name: "Our Blog", href: "/blogs" },
-    { name: "Events", href: "/events" },
-    { name: "Gallery", href: "/gallery" },
-    { name: "Contact", href: "/contact" },
-    { name: "Join Community", href: "/join" },
+    { name: "आमच्याबद्दल", href: "/about" },
+    { name: "आमचा ब्लॉग", href: "/blogs" },
+    { name: "कार्यक्रम", href: "/events" },
+    { name: "गॅलरी", href: "/gallery" },
+    { name: "संपर्क", href: "/contact" },
+    { name: "समुदायात सामील व्हा", href: "/join" },
   ];
 
   return (
@@ -43,19 +43,19 @@ export function Footer() {
             <div className="flex items-center space-x-2 mb-4">
               <Image
                 src="/logo.png"
-                alt="Dhamma Sangha Kolhapur Logo"
+                alt="धम्म संघ कोल्हापूर लोगो"
                 width={40}
                 height={40}
                 className="rounded-full"
               />
               <span className="text-2xl font-serif font-semibold">
-                Dhamma Sangha
+                धम्म संघ
               </span>
             </div>
             <p className="text-gray-100 mb-4 max-w-md">
-              A community exploring Buddha's teachings through a scientific,
-              evidence-aware lens. Join us in discovering the transformative
-              power of mindful living.
+              वैज्ञानिक, साक्ष्य-आधारित दृष्टिकोनातून बुद्धाच्या शिकवणींचा
+              अभ्यास करणारा समुदाय. सजग जीवनाची परिवर्तनकारी शक्ती शोधण्यासाठी
+              आमच्यात सामील व्हा.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social) => (
@@ -75,7 +75,7 @@ export function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+            <h3 className="text-lg font-semibold mb-4">द्रुत दुवे</h3>
             <ul className="space-y-2">
               {quickLinks.map((link) => (
                 <li key={link.name}>
@@ -92,11 +92,11 @@ export function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Contact</h3>
+            <h3 className="text-lg font-semibold mb-4">संपर्क</h3>
             <div className="space-y-2 text-gray-100">
-              <p>📍 Kolhapur, Maharashtra</p>
+              <p>📍 कोल्हापूर, महाराष्ट्र</p>
               <p>📧 info@dhammasanghakolhapur.com</p>
-              <p>🕐 Sundays at 10:00 AM</p>
+              <p>🕐 रविवारी सकाळी 10:00 वाजता</p>
             </div>
           </div>
         </div>
@@ -104,10 +104,10 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-white/20 mt-8 pt-8 text-center">
           <p className="text-gray-100">
-            © {currentYear} Dhamma Sangha Kolhapur. All rights reserved.
+            © {currentYear} धम्म संघ कोल्हापूर. सर्व हक्क राखीव.
           </p>
           <p className="text-sm text-gray-200 mt-2">
-            May all beings be happy and free from suffering.
+            सर्व प्राणी सुखी आणि दुःखमुक्त असोत.
           </p>
         </div>
       </div>

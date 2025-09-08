@@ -3,13 +3,13 @@ export default function JoinPage() {
     <main className="min-h-screen py-16 px-4">
       <div className="max-w-2xl mx-auto">
         <h1 className="text-4xl md:text-5xl font-bold text-cambridge_blue mb-8 text-center">
-          Join Our Community
+          आमच्या समुदायात सामील व्हा
         </h1>
 
         <div className="bg-white rounded-2xl p-8 shadow-soft">
           <p className="text-lg text-gray-700 mb-8 text-center">
-            Become part of our community exploring Buddhist wisdom through a
-            scientific lens.
+            वैज्ञानिक दृष्टिकोनातून बौद्ध शहाणपणाचा शोध घेणाऱ्या आमच्या
+            समुदायाचा भाग व्हा.
           </p>
 
           <form className="space-y-6">
@@ -18,7 +18,7 @@ export default function JoinPage() {
                 htmlFor="name"
                 className="block text-sm font-medium text-gray-700 mb-2"
               >
-                Full Name *
+                पूर्ण नाव *
               </label>
               <input
                 type="text"
@@ -26,7 +26,7 @@ export default function JoinPage() {
                 name="name"
                 required
                 className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-cambridge_blue focus:border-transparent transition-colors"
-                placeholder="Enter your full name"
+                placeholder="तुमचे पूर्ण नाव टाका"
               />
             </div>
 
@@ -35,7 +35,7 @@ export default function JoinPage() {
                 htmlFor="email"
                 className="block text-sm font-medium text-gray-700 mb-2"
               >
-                Email Address *
+                ईमेल पत्ता *
               </label>
               <input
                 type="email"
@@ -43,7 +43,7 @@ export default function JoinPage() {
                 name="email"
                 required
                 className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-cambridge_blue focus:border-transparent transition-colors"
-                placeholder="Enter your email address"
+                placeholder="तुमचा ईमेल पत्ता टाका"
               />
             </div>
 
@@ -52,14 +52,14 @@ export default function JoinPage() {
                 htmlFor="interests"
                 className="block text-sm font-medium text-gray-700 mb-2"
               >
-                Areas of Interest
+                आवडीची क्षेत्रे
               </label>
               <textarea
                 id="interests"
                 name="interests"
                 rows={3}
                 className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-cambridge_blue focus:border-transparent transition-colors"
-                placeholder="What aspects of Buddhist practice interest you most? (e.g., meditation, mindfulness, compassion, philosophy)"
+                placeholder="बौद्ध आचरणाचे कोणते पैलू तुम्हाला सर्वात जास्त आवडतात? (उदा., ध्यान, सजगता, करुणा, तत्वज्ञान)"
               />
             </div>
 
@@ -67,13 +67,13 @@ export default function JoinPage() {
               type="submit"
               className="w-full bg-hunyadi_yellow hover:bg-yellow-500 text-gray-900 py-3 px-6 rounded-xl font-semibold transition-colors shadow-soft"
             >
-              Join Our Community
+              आमच्या समुदायात सामील व्हा
             </button>
           </form>
 
           <p className="text-sm text-gray-500 mt-6 text-center">
-            By joining, you'll receive updates about our events, meditation
-            sessions, and community activities.
+            सामील होऊन, तुम्हाला आमच्या कार्यक्रमांची, ध्यान सत्रांची आणि
+            सामुदायिक उपक्रमांची अपडेट्स मिळतील.
           </p>
         </div>
       </div>
